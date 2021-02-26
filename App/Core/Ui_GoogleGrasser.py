@@ -202,6 +202,11 @@ class Ui_application(object):
 
         self.gridLayout_8.addWidget(self.all_config_prompt, 0, 0, 1, 1)
 
+        self.all_config = QTreeView(self.config_tab)
+        self.all_config.setObjectName(u"all_config")
+
+        self.gridLayout_8.addWidget(self.all_config, 1, 0, 1, 1)
+
         self.config_tab_button_group = QVBoxLayout()
         self.config_tab_button_group.setObjectName(u"config_tab_button_group")
         self.add_language = QPushButton(self.config_tab)
@@ -246,11 +251,6 @@ class Ui_application(object):
 
 
         self.gridLayout_8.addLayout(self.config_tab_button_group, 1, 1, 1, 1)
-
-        self.all_config = QTreeView(self.config_tab)
-        self.all_config.setObjectName(u"all_config")
-
-        self.gridLayout_8.addWidget(self.all_config, 1, 0, 1, 1)
 
         self.tabs.addTab(self.config_tab, "")
         self.about_tab = QWidget()
@@ -328,7 +328,7 @@ class Ui_application(object):
         self.import_config.setText(QCoreApplication.translate("application", u"\u5bfc\u5165\u914d\u7f6e", None))
         self.export_config.setText(QCoreApplication.translate("application", u"\u5bfc\u51fa\u914d\u7f6e", None))
         self.delete_config.setText(QCoreApplication.translate("application", u"\u5220\u9664\u914d\u7f6e", None))
-        self.tabs.setTabText(self.tabs.indexOf(self.config_tab), QCoreApplication.translate("application", u"\u914d\u7f6e", None))
+        self.tabs.setTabText(self.tabs.indexOf(self.config_tab), QCoreApplication.translate("application", u"\u914d\u7f6e(\u6682\u672a\u5b8c\u6210)", None))
         self.about_text_browser.setHtml(QCoreApplication.translate("application", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><title>\u5173\u4e8e</title><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
