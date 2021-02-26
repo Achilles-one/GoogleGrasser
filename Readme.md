@@ -1,22 +1,28 @@
 # GoogleGrasser
-这是一个使用python googtrans库发送多次翻译请求让文本变得生草的python脚本。
 
-## Run
+This is a python script that uses the python googtrans library to send multiple translation requests to make the text funny.
 
-你可以通过在终端运行如下命令来运行：
+This repository contains:
+
+* [Install Dependency Packages](#Install-Dependency-Packages)
+* [Run Script](#Run-Script)
+* [ToDo](#ToDo)
+
+## Install Dependency Packages
+
+```shell
+pip install -r requiments.txt
+```
+
+## Run Script
+
+You can run it by running the following command in the terminal.
 
 ```shell
 cd /App/
 python application.py
 ```
 
-不过在此之前，您需要运行以下命令来安装依赖包：
-
-```shell
-pip install -r requiments.txt
-```
-
 ## ToDo
-* 实装配置页面的功能
-* 加入代理功能
-* 打包Releases版本
+* Functionality of the implementation configuration page.
+* Add setting proxy function.
