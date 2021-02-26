@@ -1,0 +1,6 @@
+langid==1.1.6
+PySide6==6.0.1
+googletrans==4.0.0-rc.1
+pyperclip==1.8.2
+requests==2.25.1
+pydub==0.24.1
