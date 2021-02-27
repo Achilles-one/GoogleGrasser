@@ -1,6 +1,10 @@
 # GoogleGrasser
 
-[![](https://img.shields.io/github/license/superjavascrip/GoogleGrasser?color=greeb)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![Programing Language](https://img.shields.io/badge/Programing%20Language-Python-brightgreen)](https://www.python.org/)
+
+[![github](https://img.shields.io/badge/github-superjavascrip-brightgreen.svg)](https://github.com/superjavascrip)
+
+[![license](https://img.shields.io/github/license/superjavascrip/GoogleGrasser?color=greeb)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 这是一个python脚本，它使用Python googletrans库发送多个翻译请求，使文本变得生草。
 
