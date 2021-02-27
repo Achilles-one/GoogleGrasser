@@ -107,7 +107,7 @@ LANGUAGES = [
     "yo",
     "zu"
 ]
-SERVICE_URLS = ['translate.google.ac', 'translate.google.ad', 'translate.google.ae',
+SERVICE_URLS = ('translate.google.ac', 'translate.google.ad', 'translate.google.ae',
                 'translate.google.al', 'translate.google.am', 'translate.google.as',
                 'translate.google.at', 'translate.google.az', 'translate.google.ba',
                 'translate.google.be', 'translate.google.bf', 'translate.google.bg',
@@ -173,4 +173,4 @@ SERVICE_URLS = ['translate.google.ac', 'translate.google.ad', 'translate.google.
                 'translate.google.tk', 'translate.google.tl', 'translate.google.tm',
                 'translate.google.tn', 'translate.google.to', 'translate.google.tt',
                 'translate.google.us', 'translate.google.vg', 'translate.google.vu',
-                'translate.google.ws']
+                'translate.google.ws')
