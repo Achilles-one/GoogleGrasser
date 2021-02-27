@@ -7,7 +7,7 @@ class ConfigManager(object):
     def __init__(
             self,
             config_file_name: str
-    ) -> None:
+    ):
         self.config_file = f"Config/{config_file_name}.json"
 
     def return_all_config(self) -> list:

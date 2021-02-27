@@ -5,7 +5,10 @@ from pydub import AudioSegment
 
 class GoogleVoice(object):
 
-    def __init__(self, service_url: str = "translate.google.cn"):
+    def __init__(
+            self,
+            service_url: str = "translate.google.cn"
+    ):
         from constants import SERVICE_URLS
         if service_url in SERVICE_URLS:
             self.service_url = service_url
@@ -17,7 +20,7 @@ class GoogleVoice(object):
     def splicing_audio(
             file_list: list,
             output_file
-    ):
+    ) -> None:
         try:
             output_music = AudioSegment.empty()
             for i in file_list:
@@ -30,7 +33,7 @@ class GoogleVoice(object):
     def get_token(
             self,
             text: str
-    ):
+    ) -> str:
         return self.token_tool.do(text)
 
     def output_voice(
@@ -38,7 +41,7 @@ class GoogleVoice(object):
             text: str,
             output_file: str = "Output.mp3",
             language: str = "zh-cn"
-    ):
+    ) -> None:
         output_file = f"Output/{output_file}"
         try:
             string_after_modification = text.replace("%20", " ")

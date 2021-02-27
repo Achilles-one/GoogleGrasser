@@ -8,7 +8,7 @@ class GrassResult(object):
             self,
             text: str,
             language_list: list or None
-    ) -> None:
+    ):
         self.text = text
         self.language_list = language_list
 
@@ -19,7 +19,7 @@ class GoogleGrasser(object):
             config_file_name: str = "Config",
             service_url: str = "translate.google.cn",
             no_english: bool = True
-    ) -> None:
+    ):
         from googletrans import Translator
         from ConfigManager import ConfigManager
         from constants import LANGUAGES

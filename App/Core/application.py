@@ -23,7 +23,7 @@ class OnClick(QObject):
     def __init__(
             self,
             parent
-    ) -> None:
+    ):
         super(OnClick, self).__init__(parent)
         self.google_voice = GoogleVoice()
 
@@ -41,7 +41,10 @@ class OnClick(QObject):
                     number_of_remaining_digits = len(grass_string) % 198
                     for i in range(number):
                         __CacheString__ = grass_string[i * 198:(i + 1) * 198]
-                        self.google_voice.output_voice("__Cache__/__Cache__{}.mp3".format(i + 1), __CacheString__)
+                        self.google_voice.output_voice(
+                            "__Cache__/__Cache__{}.mp3".format(i + 1),
+                            __CacheString__
+                        )
                     self.google_voice.output_voice(
                         grass_string[number * 198:number * 198 + number_of_remaining_digits],
                         "__Cache__/__Cache__{}.mp3".format(number + 1)
@@ -93,7 +96,7 @@ class OnClick(QObject):
 
 
 class MainWindow(QMainWindow):
-    def __init__(self) -> None:
+    def __init__(self):
         super(MainWindow, self).__init__()
         self.grass_result: Grasser.GrassResult
         self.settings_manager = SettingsManager()
