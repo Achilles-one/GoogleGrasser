@@ -1,4 +1,4 @@
-from Ui_GoogleGrasser import Ui_application
+from UI_GoogleGrasser import Ui_application
 
 from PySide6.QtWidgets import *
 from PySide6.QtCore import *
@@ -13,7 +13,6 @@ import constants
 import langid
 import os
 import pyperclip
-from googletrans.constants import DEFAULT_SERVICE_URLS
 
 
 class OnClick(QObject):
@@ -115,7 +114,7 @@ class MainWindow(QMainWindow):
         self.ui.select_config.addItems(
             ["随机"] + self.config_manager.return_all_config()
         )
-        self.ui.select_google_translate_url.addItems(list(DEFAULT_SERVICE_URLS))
+        self.ui.select_google_translate_url.addItems(constants.SERVICE_URLS)
         self.ui.select_application_style.addItems(QStyleFactory.keys())
 
         self.GrassingThread = QThread(self)

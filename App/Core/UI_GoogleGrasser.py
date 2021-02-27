@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'Ui_GoogleGrasser.ui'
+## Form generated from reading UI file 'UI_GoogleGrasser.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.0.0
 ##

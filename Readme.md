@@ -1,28 +1,54 @@
 # GoogleGrasser
 
-This is a python script that uses the python googtrans library to send multiple translation requests to make the text funny.
+> 这是一个python脚本，它使用Python googletrans库发送多个翻译请求，使文本变得生草。
 
-This repository contains:
 
-* [Install Dependency Packages](#Install-Dependency-Packages)
-* [Run Script](#Run-Script)
-* [ToDo](#ToDo)
+本Readme包含:
 
-## Install Dependency Packages
+> * [安装依赖包](#安装依赖包)
+> * [运行脚本](#运行脚本)
+> * [项目文件目录](#项目文件目录)
+> * [将要添加的功能](#将要添加的功能)
+
+## 安装依赖包
 
 ```shell
 pip install -r requiments.txt
 ```
 
-## Run Script
+## 运行脚本
 
-You can run it by running the following command in the terminal.
+你可以在命令行里输入这些命令来运行脚本
 
 ```shell
-cd /App/
+cd App/Core/
 python application.py
 ```
 
-## ToDo
-* Functionality of the implementation configuration page.
-* Add setting proxy function.
+## 项目文件目录
+
+* App(代码存放目录)
+    - Core(程序主目录)
+        + \_\_Cache__(缓存文件目录)
+        + Config(存放配置文件目录)
+        + Export(导出的配置文件存放目录)
+        + Output(导出的mp3音频文件存放目录)
+        + res(资源目录)
+        + Settings(设置文件存放目录)
+        + application.py(应用程序主代码文件)
+        + ConfigManager.py(配置管理器代码文件)
+        + constants.py(程序常量存放文件)
+        + GoogleVoice.py(谷歌语音爬虫代码文件)
+        + Grasser.py(生草器主代码文件)
+        + SettingsManager.py(设置管理器代码文件)
+        + UI_GoogleGrasser.py(UI代码文件，由PySide6-uic 用 UI文件夹里的UI_GoogleGrasser.ui文件自动生成)
+    - UI(UI文件目录)
+        + UI_GoogleGrasser.ui(PySide6UI文件，使用QtDesign编辑)
+* LICENSE(开源协议)
+* Readme.md(本文)
+* requiments.txt(依赖包文件)
+
+## 将要添加的功能
+
+> * 将配置界面功能实装
+> * 增加代理设置
